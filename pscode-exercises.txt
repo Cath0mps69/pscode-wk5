@@ -1,0 +1,85 @@
+// Exercise 1: Calculate the Sum of Two Numbers
+
+--begin
+   Define NUM1 as integer
+   Define NUM2 as integer
+   Define nSUM  as integer
+
+   Display "Enter your first whole number"
+   Input NUM1
+
+   Display "Enter your second whole number"
+   Input NUM2
+
+   nSUM = NUM1 + NUM2
+   DISPLAY "Sum of all numbers" nSUM
+
+--end
+
+// Exercise 2: Check if a Number is Even or Odd
+
+--begin
+   Define NUM1 as integer
+   Define QUOTIENT1 as integer
+
+   Display "Enter your whole number"
+   Input NUM1
+
+   IF NUM1/2 >= 1
+   Then Display "Your number is even."
+   Else Display "Your number is odd."
+
+--end
+
+// Exercise 3: 
+Write pseudo code that will perform the following.    
+
+a) Read in 5 separate numbers.   
+b) Calculate the average of the five numbers.
+c) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
+d) Write out the results found from steps b and c with a message describing what they are
+
+
+--begin
+   Define NUM1 as integer
+   Define NUM2 as integer
+   Define NUM3 as integer
+   Define NUM4 as integer
+   Define NUM5 as integer
+   Define nAVG as floating point number
+   Define MINCHECK as integer
+   Define MAXCHECK as integer
+
+   Display "Enter your first whole number"
+   Input NUM1
+
+   Display "Enter your second whole number"
+   Input NUM2
+
+   Display "Enter your third whole number"
+   Input NUM3
+
+   Display "Enter your fourth whole number"
+   Input NUM4
+ 
+   Display "Enter your fifth whole number"
+   Input NUM5
+
+   nAVG = (NUM1+NUM2+NUM3+NUM4+NUM5)/5
+   Display "Average of numbers entered" as nAVG
+
+   MINCHECK = NUM1
+   IF (NUM2<MINCHECK THEN MINCHECK = NUM2) AND
+      IF (NUM3<MINCHECK THEN MINCHECK = NUM3) AND
+          IF (NUM4<MINCHECK THEN MINCHECK = NUM4) AND
+              IF (NUM5<MINCHECK THEN MINCHECK = NUM5)
+   DISPLAY "Minimum Number" as MINCHECK
+
+   MAXCHECK = NUM1
+   IF (NUM2>MAXCHECK THEN MAXCHECK = NUM2) AND
+      IF (NUM3>MAXCHECK THEN MAXCHECK = NUM3) AND
+          IF (NUM4>MAXCHECK THEN MAXCHECK = NUM4) AND
+              IF (NUM5>MAXCHECK THEN MAXCHECK = NUM5)
+   DISPLAY "Maximum Number" as MAXCHECK
+
+--end
